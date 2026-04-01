@@ -87,3 +87,4 @@ Duplicate dates (multiple trades same day) get `_B`, `_C` suffixes automatically
 | Wrong year selected | The E*Trade dropdown selector uses `mat-select[2]` — if the page layout changes, inspect the selectors |
 | Files not moving | Check that `~/Downloads` is the Chrome download destination |
 # BrockerageDownloader
+# BrockerageDownloader
