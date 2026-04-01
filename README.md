@@ -35,26 +35,6 @@ Both scripts require Python 3 (standard macOS install is fine).
 
 ---
 
-## Fidelity: Verify Local Downloads
-
-`fidelity_check.py` — Reads the Fidelity trade confirmations page, expands all years
-using "Show More", and compares counts against your local folder.
-
-### Usage
-```bash
-python3 fidelity_check.py --local-dir /path/to/your/Fidelity/folder
-```
-
-### What it does
-- Connects to the open Fidelity tab in Chrome (`digitalservices.fidelity.com`)
-- For each year (2017–2025), sets the year filter and clicks "Show More" until all
-  results are visible
-- Counts documents on the website per year
-- Counts PDFs in your local folder per year
-- Prints a comparison table
-
----
-
 ## E*Trade: Download All Trade Confirmations
 
 `etrade_download.py` — Downloads all trade confirmations from E*Trade for years
@@ -75,6 +55,30 @@ output-folder/
 ```
 
 Duplicate dates (multiple trades same day) get `_B`, `_C` suffixes automatically.
+---
+
+## Fidelity: Verify Local Downloads (Different style example)
+
+`fidelity_check.py` — Reads the Fidelity trade confirmations page, expands all
+trades using "Show More", and compares counts against your local folder.  **In
+this case, I had downloaded manually already**, so this is just confirming I
+got everything by only counting the number of items on the page. Otherwise Ask
+Claude Code to change this similar to the E*Trade example where PDFs can be
+downloaded automatically
+
+### Usage
+```bash
+python3 fidelity_check.py --local-dir /path/to/your/Fidelity/folder
+```
+
+### What it does
+- Connects to the open Fidelity tab in Chrome (`digitalservices.fidelity.com`)
+- For each year (2017–2025), sets the year filter and clicks "Show More" until all
+  results are visible
+- Counts documents on the website per year
+- Counts PDFs in your local folder per year
+- Prints a comparison table
+
 
 ---
 
