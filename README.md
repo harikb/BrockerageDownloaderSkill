@@ -90,7 +90,3 @@ python3 fidelity_check.py --local-dir /path/to/your/Fidelity/folder
 | Timeout / no file appears | The session may have expired — refresh the page and re-run |
 | Wrong year selected | The E*Trade dropdown selector uses `mat-select[2]` — if the page layout changes, inspect the selectors |
 | Files not moving | Check that `~/Downloads` is the Chrome download destination |
-# BrockerageDownloader
-# BrockerageDownloader
-# BrockerageDownloader
-# BrockerageDownloader
