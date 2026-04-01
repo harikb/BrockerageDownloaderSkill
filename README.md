@@ -88,3 +88,4 @@ Duplicate dates (multiple trades same day) get `_B`, `_C` suffixes automatically
 | Files not moving | Check that `~/Downloads` is the Chrome download destination |
 # BrockerageDownloader
 # BrockerageDownloader
+# BrockerageDownloader
